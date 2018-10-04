@@ -168,6 +168,8 @@ namespace String_día4
             //Console.WriteLine("El número más bajo es "+Math.Min(num1, Math.Min(num2, num3)));
             ////Math.Max= calcula el máximo de dos números
 
+            ////Escribe un programa que muestre la fecha de hoy. 
+            //Console.WriteLine(DateTime.Now);//PARA LA FECHA EN EL MOMENTO.DateTime.Now
 
 
 
