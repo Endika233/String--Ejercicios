@@ -122,10 +122,10 @@ namespace String_día4
 
 
 
-            //         //Escribe un programa el cual analizará si la contraseña introducida es correcta o no.
-            //         //Para que la contraseña sea correcta deberá cumplir estas directivas:
-            //         //Debe tener 8 caracteres como mínimo.
-            //         //La contraseña deberá contener números.
+            ////Escribe un programa el cual analizará si la contraseña introducida es correcta o no.
+            ////Para que la contraseña sea correcta deberá cumplir estas directivas:
+            ////Debe tener 8 caracteres como mínimo.
+            ////La contraseña deberá contener números.
             ////Deberá contener al menos dos dígitos. 
             //int i,dig;
             //string pass;         
@@ -172,13 +172,22 @@ namespace String_día4
             //Console.WriteLine(DateTime.Now);//PARA LA FECHA EN EL MOMENTO.DateTime.Now
 
 
+            //Haz un programa que escriba tu nombre al reves//usaremos arrays
+            string nombre = "endika";
+            char[] arrayNombre = nombre.ToCharArray();//declaras un array y conviertes el string en carácteres,
+            //cada carácter ocupara hueco en el array y queda asignado el número que tiene.
+            Array.Reverse(arrayNombre);//esta funcion da la vuelta a los carácteres del array.
+            Console.Write(arrayNombre);
 
-            Console.ReadLine();
+
+         
 
 
 
 
 
+
+           Console.ReadKey();
 
         }
     }
