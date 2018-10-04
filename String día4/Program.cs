@@ -122,45 +122,56 @@ namespace String_día4
 
 
 
-            //Escribe un programa el cual analizará si la contraseña introducida es correcta o no.
-            //Para que la contraseña sea correcta deberá cumplir estas directivas:
-            //Debe tener 8 caracteres como mínimo.
-            //La contraseña deberá contener números.
-			//Deberá contener al menos dos dígitos. 
-			int i,dig;
-			string pass;         
-            do
-            {
-                dig = 0;
-                Console.WriteLine("Escriba su contraseña:");
-                pass = Console.ReadLine();
+            //         //Escribe un programa el cual analizará si la contraseña introducida es correcta o no.
+            //         //Para que la contraseña sea correcta deberá cumplir estas directivas:
+            //         //Debe tener 8 caracteres como mínimo.
+            //         //La contraseña deberá contener números.
+            ////Deberá contener al menos dos dígitos. 
+            //int i,dig;
+            //string pass;         
+            //         do
+            //         {
+            //             dig = 0;////Reseteo de digitos
+            //             Console.WriteLine("Escriba su contraseña:");
+            //             pass = Console.ReadLine();
 
-                for (i = 0; i < pass.Length; i++)
-                {
-                    if (char.IsNumber(pass[i]))
-                    {
-                        dig++;
-                    }
-                }
+            //             for (i = 0; i < pass.Length; i++)////Contador de digitos
+            //             {
+            //                 if (char.IsNumber(pass[i]))////Identificador de números
+            //                 {
+            //                     dig++;
+            //                 }
+            //             }
 
-                if (pass.Length < 8)
-                {
-                    Console.Write("Introduzca al menos 8 carácteres. ");
-                }
-                else if(dig<2)
-                {
-                    Console.Write("Introduzca al menos 2 dígitos.");
-                }
-            } while (pass.Length < 8 || dig < 2);
-            Console.WriteLine("Contraseña aceptada");
-			
-
-            
+            //             if (pass.Length < 8)
+            //             {
+            //                 Console.Write("Introduzca al menos 8 carácteres. ");
+            //             }
+            //             else if(dig<2)
+            //             {
+            //                 Console.Write("Introduzca al menos 2 dígitos.");
+            //             }
+            //         } while (pass.Length < 8 || dig < 2);
+            //         Console.WriteLine("Contraseña aceptada");
 
 
 
+            ////Escribe un programa que al meter tres números por teclado identifique el mínimo y el máximo 
+            ////(usa el método correspondiente). 
+            //int num1, num2, num3;
+            //Console.WriteLine("Introduzca tres números");
+            //num1 = Int32.Parse(Console.ReadLine());
+            //num2 = Int32.Parse(Console.ReadLine());
+            //num3 = Int32.Parse(Console.ReadLine());
 
-                Console.ReadLine();
+            //Console.WriteLine("El número más alto es "+Math.Max(num1,Math.Max(num2,num3)));
+            //Console.WriteLine("El número más bajo es "+Math.Min(num1, Math.Min(num2, num3)));
+            ////Math.Max= calcula el máximo de dos números
+
+
+
+
+            Console.ReadLine();
 
 
 
