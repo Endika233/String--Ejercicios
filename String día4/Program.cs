@@ -127,23 +127,33 @@ namespace String_día4
             //Debe tener 8 caracteres como mínimo.
             //La contraseña deberá contener números.
 			//Deberá contener al menos dos dígitos. 
-			int i,dig=0;
-			string pass;
-			Console.WriteLine("Escriba su contraseña");
-			pass = Console.ReadLine();
-			while (pass.Length < 8)
-			{
-				Console.WriteLine("Introduzca al menos 8 carácteres");
-				pass = Console.ReadLine();
-			}		
-
-			for (i = 0; i < pass.Length; i++)
+			int i,dig;
+			string pass;         
+            do
             {
-                if (char.IsNumber(pass[i]))
+                dig = 0;
+                Console.WriteLine("Escriba su contraseña:");
+                pass = Console.ReadLine();
+
+                for (i = 0; i < pass.Length; i++)
                 {
-                    dig++;
+                    if (char.IsNumber(pass[i]))
+                    {
+                        dig++;
+                    }
                 }
-			}
+
+                if (pass.Length < 8)
+                {
+                    Console.Write("Introduzca al menos 8 carácteres. ");
+                }
+                else if(dig<2)
+                {
+                    Console.Write("Introduzca al menos 2 dígitos.");
+                }
+            } while (pass.Length < 8 || dig < 2);
+            Console.WriteLine("Contraseña aceptada");
+			
 
             
 
